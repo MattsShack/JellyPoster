@@ -1,0 +1,11 @@
+[Unit]
+Description=JellyPoster
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python [UPDATE_PATH]/JellyPoster.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
